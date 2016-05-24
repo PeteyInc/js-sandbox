@@ -155,3 +155,11 @@ var nums = [4, 1, 8, 2, 3, 6, 7, 5, 10, 9, 12];
 missNum(nums);
 
 nums.sort();
+
+// Truthy/Falsy Objective
+function truthyObject(object){
+for(var key in object){
+    if(object.hasOwnProperty(key) && (!object[key])) delete object[key];
+}
+return object;
+}
